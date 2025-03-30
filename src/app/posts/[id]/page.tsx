@@ -184,7 +184,8 @@ export default async function PostPage({ params }: PostPageProps) {
       </Card>
 
       <div className="mb-6">
-        <h2 className="text-xl font-semibold flex items-center gap-2 mb-4">
+        <h2 className="relative text-xl font-semibold flex items-center gap-2 mb-4">
+          <div id="comments" className="absolute top-[-100]" />
           <MessageSquare className="h-5 w-5" />
           Comments ({comments.length})
         </h2>

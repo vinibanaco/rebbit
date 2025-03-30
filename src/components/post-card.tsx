@@ -99,7 +99,7 @@ export default function PostCard({ post, isAuthenticated }: PostCardProps) {
           </CardContent>
 
           <CardFooter className="pt-0">
-            <Link href={`/posts/${post.id}`} passHref>
+            <Link href={`/posts/${post.id}#comments`} passHref>
               <Button variant="ghost" size="sm" className="gap-1">
                 <MessageSquare className="h-4 w-4" />
                 {post.comment_count}{" "}
