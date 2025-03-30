@@ -24,9 +24,11 @@ export default async function RootLayout({
       <body className={inter.className}>
         <div className="min-h-screen flex flex-col">
           <Header user={user} />
-          <main className="flex-1 container py-6 px-4 md:px-6">{children}</main>
+          <main className="flex-1 container mx-auto py-6 px-4 md:px-6">
+            {children}
+          </main>
           <footer className="border-t py-4 text-center text-sm text-muted-foreground">
-            <div className="container">
+            <div className="container mx-auto">
               Rebbit &copy; {new Date().getFullYear()}
             </div>
           </footer>

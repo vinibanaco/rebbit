@@ -23,7 +23,7 @@ export default function Header({ user }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-10 bg-background border-b">
-      <div className="container flex items-center justify-between h-14 px-4 md:px-6">
+      <div className="container flex items-center justify-between h-14 mx-auto px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <span className="text-xl font-bold text-orange-500">Rebbit</span>
         </Link>
